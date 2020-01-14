@@ -1,0 +1,199 @@
+<!--测肤报告-->
+<view class="report" wx:if="{{isShow}}">
+  <view class="report-top">
+    <view class="info">
+      <view class="info-img"><image src="{{avatarUrl}}"></image></view>
+      <view class="info-text">
+        <text class="info-name">{{name}}</text>
+        <text class="info-time">最近测试：{{time}}</text>
+      </view>
+      <view class="info-share" bindtap="formSubmit"><image src="https://evathumber.vinistyle.cn/upload/201910/20191030124255203.png"></image></view>
+    </view>
+
+    <view class="info-button">
+      <view class="btn1" bindtap="retest">
+        <text>重新测试</text>
+        <image src="https://evathumber.vinistyle.cn/upload/201910/20191030124142919.png"></image>
+      </view>
+      <view class="btn2" bindtap="history">
+        <text>测肤历史</text>
+        <image src="https://evathumber.vinistyle.cn/upload/201910/20191030124142351.png"></image>
+      </view>
+    </view>
+  </view>
+
+  <!--切换内容-->
+  <view class="report-conn {{tabFixed?'small_navFix':''}}" id="tab-con">
+    <!--切换标签---->
+    <view class="menu" >
+      <view class='item {{nowstatus == "productBox" ? "on" : ""}}' bindtap="toViewClick" data-hash="productBox">综合情况</view>
+      <view class='item {{nowstatus == "commentBox" ? "on" : ""}}' bindtap="toViewClick" data-hash="commentBox">护肤方案</view>
+      <view class='item {{nowstatus == "infoBox" ? "on" : ""}}' bindtap="toViewClick" data-hash="infoBox">产品定制</view>
+      <view class='item {{nowstatus == "tipsBox" ? "on" : ""}}' bindtap="toViewClick" data-hash="tipsBox">特别提醒</view>
+    </view>
+
+    <scroll-view class="cont-conn" style="height:{{winHeight}}" scroll-into-view="{{toView}}" scroll-y="true" data-scrollTop="{{scrollTop}}" scroll-with-animation="true" bindscroll="onPageScroll">
+      <!--综合情况-->
+      <view class='cont-box' id="productBox">
+        <!--肤质类型-->
+        <view class="box1-one">
+          <view class="title">给自己的耐心点个赞吧，做了题又传了照片，不过，这一切都是为了更加准确的了解自己的肌肤状态呀，根据您的照片及四维法问答的综合判断，亲爱的肌肤状况如下：<text>（说明：照片主要检测“痘痘”“皱纹”“斑点”“毛孔”四个关键肌肤问题，若您的某项问题不严重，对应图片中就不会再标识出来了哦！)</text></view>
+          <view class="wenti">
+            <image class="zhenren" src="{{photo_name}}"></image>
+            <image class="rlt" src="https://evathumber.vinistyle.cn/upload/201911/20191114164838850.png"></image> 
+            <view class="wt_type wt_type1" wx:if="{{pore_num!=0}}"> 
+              <image class="qy1" src="https://evathumber.vinistyle.cn/upload/201911/20191114170245697.png"></image>
+              <text class="zyx zyx1"></text>
+              <text class="wt_name">毛孔</text>
+            </view>
+            <view class="wt_type wt_type2" wx:if="{{pockmark_num!=0}}">
+              <image class="qy2" src="https://evathumber.vinistyle.cn/upload/201911/20191114170245344.png"></image>
+              <text class="zyx zyx2"></text>
+              <text class="wt_name">痘痘</text>
+            </view>
+            <view class="wt_type wt_type3" wx:if="{{wrinkle_num!=0}}">
+              <image class="qy3" src="https://evathumber.vinistyle.cn/upload/201911/20191114170245538.png"></image>
+              <text class="zyx zyx3"></text>
+              <text class="wt_name">皱纹</text>
+            </view>
+            <view class="wt_type wt_type4" wx:if="{{spot_num!=0}}">
+              <image class="qy4" src="https://evathumber.vinistyle.cn/upload/201911/20191114175259338.png"></image>
+              <text class="zyx zyx4"></text>
+              <text class="wt_name">斑点</text>
+            </view>
+          </view>
+        </view>
+
+        <!--肤质类型-->
+        <view class="box1-two">
+          <view class="title"><text></text>肤质类型</view>
+          <view class="pf">
+            <view class="pf-type"><text>{{n1}}</text>型</view>
+            <view class="pf-image">
+              <image class="pf-category" src="{{n11_img}}"></image>
+              <text class="pf-tips pf-tips1">{{n11_0}}</text>
+              <text class="pf-tips pf-tips2">{{n11_1}}</text>
+              <text class="pf-tips pf-tips3">{{n11_2}}</text>
+              <text class="pf-tips pf-tips4">{{n11_3}}</text>
+            </view>
+          </view>
+          <view class="pf-desc">{{n4}}</view>
+        </view>
+
+        <!--问题根源-->
+        <view class="box1-three">
+          <view class="title"><text></text>问题根源</view>
+          <view class="wt-desc">为什么会出现这么情况呢？让初灵从皮肤专业的角度来告诉你原因哦！</view>
+          <view class="wt">
+            <view class="wt-img" wx:for="{{n5_img}}" wx:for-item="wt_img" wx:key><image src="{{wt_img}}"></image></view>
+          </view>
+          <view class="wt-desc">{{n5}}</view>
+        </view>
+
+      </view>
+
+      <!--护理方案-->
+      <view class='cont-box' id="commentBox">
+        <!--护理建议-->
+        <view class="box2-one">
+          <view class="title"><text></text>护理建议</view>
+          <view class="hl-desc">了解了原因，那亲爱的你平时应该保养呢？下面这些护理建议对你很有帮助，一定要认真看哦！</view>
+          <view class="hl">
+            <view class="hl-img" wx:for="{{n6_img}}" wx:for-item="hl_img" wx:key><image src="{{hl_img}}"></image></view>
+          </view>
+          <view class="hl-desc">
+            <text>{{n6}}</text>
+          </view>
+        </view>
+
+        <!--其他建议-->
+        <view class="box2-two">
+          <view class="title"><text></text>其他建议</view>
+          <view class="qt-desc">护肤是一项需要长期坚持的工作，除了好好使用保养品，下面这几点也要注意下哦!</view>
+          <view class="qt">
+            <view class="qt-img" wx:for="{{n7_img}}" wx:for-item="qt_img" wx:key><image src="{{qt_img}}"></image></view>
+          </view>
+          <view class="qt-desc">
+          <text>{{n7}}</text>
+          </view>
+        </view>
+      </view>
+
+      <!--产品定制-->
+      <view class='cont-box' id="infoBox">
+        <!--适用成分-->
+        <view class="box3-one">
+          <view class="title"><text></text>适用成分</view>
+          <view class="sy-desc">知道平时应该怎么保养了吧？亲爱的肯定想知道：具体哪些化妆品成分比较适合你呢？下面这几种都是不错的哦，可以全方位解决你肌肤当下的主要问题，快快记下来吧！</view>
+          <view class="sy">
+            <view class="sy-img" wx:for="{{n8_img}}" wx:for-item="sy_img" wx:key><image src="{{sy_img}}"></image></view>
+          </view>
+          <view class="sy-desc">
+            <text>{{n8}}</text>
+          </view>
+        </view>
+
+        <!--适用产品-->
+        <view class="box3-two">
+          <view class="title"><text></text>适用产品</view>
+          <view class="cp-desc">初灵有哪些适合您的产品呢？下面这些都是为您的肌肤类型专属研发的哦~</view>
+          <view class="cp" bindtap="sycpLink">
+            <view class="cp-img" wx:for="{{n9_img}}" wx:for-item="cp_img" wx:key><image src="{{cp_img}}"></image></view>
+          </view>
+          <block wx:if="{{wxqrcode}}">
+            <view class="cp-desc">如果有任何不明白或疑问的地方，可加下面二维码咨询您的专属美容顾问哦！初灵最开心的事就是让亲爱的你变得越来越美哦~</view>
+            <view class="cp-code"><image src="{{wxqrcode}}"></image></view>
+          </block>
+        </view>  
+      </view>
+      
+      <!--特别提醒-->
+      <view class='cont-box' id="tipsBox">
+        <!--痘痘提醒-->
+        <view class="box4-one" wx:if="{{q1Show}}">
+          <view class="title"><text></text>痘痘提醒</view>
+          <view class="sy-desc"><text>从前面的肌肤测试中我们了解到，您的肌肤目前可能处于比较严重的痘痘肌阶段，伴随着粉刺，小红疹，白色小脓疱的反反复复的情况。一方面您本身肌肤偏油，毛孔容易堵塞，形成了闭口粉刺和黑头；另一方面皮肤分泌的油脂给皮肤表面的一些细菌提供了养分，让细菌繁殖加快，导致肌肤反复出现小红疹甚至脓疱。目前您应该留意您使用的护肤品产品中有没有质地偏油腻厚重不易涂开的产品，您是不是喜欢吃高糖高脂的食物。想要改善先从清爽护肤和饮食清淡两个方面去留意，先把肌肤目前痘痘的情况进行调理，调理至正常肌肤状态之后，再按照前面测试出来的肌肤类型进行日常护理，目前阶段，比较适合您的产品如下：</text></view>
+          <view class="cp" bindtap="q1Link">
+            <view class="cp-img"><image src="https://evathumber.vinistyle.cn/upload/201910/20191031172257329.jpg"></image></view>
+            <view class="cp-img"><image src="https://evathumber.vinistyle.cn/upload/201910/20191031172257354.png"></image></view>
+            <view class="cp-img"><image src="https://evathumber.vinistyle.cn/upload/201910/20191031172257270.jpg"></image></view>
+            <view class="cp-img"><image src="https://evathumber.vinistyle.cn/upload/201910/20191031172257943.jpg"></image></view>
+            <view class="cp-img"><image src="https://evathumber.vinistyle.cn/upload/201910/20191031172257578.jpg"></image></view>
+            <view class="cp-img"><image src="https://evathumber.vinistyle.cn/upload/201910/20191031172257316.jpg"></image></view>
+          </view>
+        </view>
+
+        <!--敏感提醒-->
+        <view class="box4-two" wx:if="{{q2Show}}">
+          <view class="title"><text></text>敏感提醒</view>
+          <view class="sy-desc"><text>从前面的测试中我们了解到，您的肌肤目前可能处于比较严重的敏感阶段，所以建议您先修复当下肌肤的敏感状态，等调理至正常肌肤状态之后，再按照前面测试出来的肌肤类型进行日常护理，皮肤从敏感状态到稳定状态的修复需要一定的时间，在此阶段一定要有足够的耐心，保持良好的心态非常重要。</text>
+<text>1.您在肌肤红痒期间，应该避免清洁皮肤，尤其是不能用清洁类的产品，否则可能会让肌肤问题加重。</text>
+<text>2.您可以每隔3-4小时外用冰袋冷敷，或者也可以早中晚用绿茶水（铁观音，龙井或碧螺春泡水）在冰箱中冷藏到10℃左右，然后用纱布敷脸。注意不要用压缩面膜，而应该使用干净卫生厚重的医用纱布。</text>
+<text>3.您可以每天早晚取黄豆粒大小的初灵安肌面霜，轻轻涂抹于面部，安肌面霜是一款可以舒缓敏感，缓解不适的神奇面霜，同时可以配合超氧赋活安肌喷雾，超氧赋活葡聚糖修护凝露一起使用，帮您缓解肌肤敏感状态。</text></view>
+          <view class="cp" bindtap="q2Link">
+            <view class="cp-img"><image src="https://evathumber.vinistyle.cn/upload/201910/20191031172606973.jpg"></image></view>
+            <view class="cp-img"><image src="https://evathumber.vinistyle.cn/upload/201910/20191031172606871.jpg"></image></view>
+            <view class="cp-img"><image src="https://evathumber.vinistyle.cn/upload/201910/20191031172606581.jpg"></image></view>
+          </view>
+        </view>
+
+        <!--温馨提示-->
+        <view class="box4-three" wx:if="{{q3Show}}">
+          <view class="title"><text></text>温馨提示</view>
+          <view class="sy-desc"><text>亲的肌肤有些闭口粉刺和黑头，在日常护理的时候多注意一下清洁的问题哦，预防毛孔阻塞，避免出现粉刺、黑头加重的情况，已经出现的痘痘，尽量避免外部损伤给肌肤造成创面，预防交叉感染，或增加痘印痘坑形成的几率。（比如扣挤痘痘，盲目的针清痘痘）</text></view>
+        </view>
+      </view>
+      <view class="share-tips"><image src="https://evathumber.vinistyle.cn/upload/201910/20191030124401236.png"></image></view>
+    </scroll-view>
+  </view>
+</view>
+
+<!--生成分享图片-->
+<view class='imagePathBox' hidden="{{maskHidden == false}}">
+  <image src="{{imagePath}}" class='shengcheng'></image>
+  <button class='baocun' bindtap='baocun'>保存相册，分享到朋友圈</button>
+</view>
+<view hidden="{{maskHidden == false}}" class="mask"></view> 
+<view class="canvas-box">
+    <canvas  style="width: 375px;height: 667px;position:fixed;top:9999px" canvas-id="mycanvas"/>
+</view> 

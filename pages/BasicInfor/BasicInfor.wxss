@@ -1,0 +1,157 @@
+/* pages/BasicInfor/BasicInfor.wxss */
+page{
+  background-color: #fafafa;
+}
+.container{
+  width:750rpx;
+  padding:0;
+  margin:0;
+}
+.top{
+  width:100%;
+  height:402rpx;
+  position:relative;
+}
+.top-bg{
+  width:100%;
+  height:100%;
+  position:absolute;
+  top:0rpx;
+  left:0rpx;
+}
+.top text{
+  font-size:30rpx;
+  color:#fff;
+  position:absolute;
+  top:240rpx;
+  left:0;
+  right:0;
+  margin:auto;
+  text-align:center;
+  letter-spacing:15rpx;
+}
+
+.logo{
+  width:140rpx;
+  height:140rpx;
+  display:block;
+  position:absolute;
+  top:75rpx;
+  left:0;
+  right:0;
+  margin:auto;
+}
+.conn{
+  margin-top:60rpx;
+}
+.info{
+  width:690rpx;
+  height:100rpx;
+  display:flex;
+  align-items:flex-end;
+  justify-content: space-between; 
+  border-bottom: 1rpx solid #cccccc;
+  font-size:32rpx; 
+}
+.txt1{
+  width:170rpx;
+  padding-left:18rpx;
+  box-sizing: border-box;
+  padding-bottom:15rpx;  
+}
+.txt2{
+  width:437rpx;
+  text-align: right;
+  padding-bottom:15rpx;  
+  color:#cccccc;
+}
+.picker{
+ color: #51c4c4;
+}
+.is_checked{ 
+ color: #51c4c4;
+} 
+.normal{ 
+color:#ccc;
+} 
+.city_checked{ 
+ color: #51c4c4;
+ display:block;
+} 
+.city_normal{ 
+color:#ccc;
+display:none;
+} 
+.icon{
+  margin-bottom: 8rpx;
+}
+.btn{
+  width:100%;
+  height:98rpx;
+  margin-top:88rpx;
+  background:#51c4c4;
+  color:#fff;
+  font-size:36rpx;
+  border-style: none;
+  border-radius:15rpx;
+}
+
+
+/* pages/SkinTest1/SkinTest1.wxss */
+page{
+  background-color: #f6f5f4;
+} 
+.SkinTest_container{
+  width:750rpx;
+  padding:0;
+  margin:0;
+}
+.SkinTest_bg image{
+  width:100%;
+  height:292rpx;
+  display:block;
+  position:absolute;
+  top:0rpx;
+  left:0rpx;
+  z-index:0;
+}
+.SkinTest_top image{
+  width: 688rpx;
+  height:320rpx;
+  display:block;
+  margin-top:58rpx;
+  position:relative;
+  z-index:1;
+  margin:58rpx auto;
+}
+.SkinTest_title{
+  font-size: 34rpx;
+  color: #2a9f93;
+  line-height: 1;
+  margin: 95rpx auto 70rpx;
+  text-align: center;
+  font-weight: bold;
+  width: 100%;
+  display: block;
+}
+.SkinTest_desc{
+  width:90%;
+  margin:auto;
+  text-align:left;
+  font-size:30rpx;
+  color:#555555;
+  letter-spacing: 2rpx;
+}
+.SkinTest_desc text{
+  color:#2a9f93;
+}
+.SkinTest_btn{
+  width:690rpx;
+  height:98rpx;
+  margin-top:140rpx;
+  background:#51c4c4;
+  color:#fff;
+  font-size:36rpx;
+  border-style: none;
+  border-radius:10rpx;
+}

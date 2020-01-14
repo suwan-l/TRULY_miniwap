@@ -1,0 +1,153 @@
+<view class="agent">
+  <view class="top">
+    <view class="info">
+      <view class="info-img">
+        <image src="{{avatarUrl}}"></image> 
+      </view>
+      <text class="info-name">{{name}}</text>
+    </view>
+
+    <view class="num">
+      <view class="person-num">测试人数:
+        <text>{{number}}</text>
+      </view>
+      <view class="person-num">新增人数:
+        <text>{{today_number}}</text>
+      </view>
+    </view>
+  </view>
+
+  <!--重点关注、一般关注、我的收藏 -->
+  <view class="conn">
+    <!--切换标签---->
+    <view class="swiper-tab">
+        <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">重点关注</view>
+        <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">一般关注</view>
+        <view class="swiper-tab-list {{currentTab==2 ? 'on' : ''}}" data-current="2" bindtap="swichNav">我的收藏</view>
+    </view>
+    
+    <view class="tab-container" wx:if="{{isShow}}">
+      <swiper current="{{currentTab}}" class="swiper-box" duration="300" style="height:{{winHeight - 31}}px">
+          <!-- 重点关注 -->
+          <swiper-item catchtouchmove='catchTouchMove'>
+            <scroll-view scroll-top="{{scrollTop}}" scroll-y="true" style="height:{{winHeight}}px;" bindscrolltolower="bindDownLoad" bindscroll="scroll" bindscrolltoupper="refresh">
+              <view class="tab-conn" wx:for="{{items}}" wx:key bindtap="listTap">
+                <view class="tab-left">
+                  <view class="tab-tx">
+                    <image src="{{item.avatarUrl}}"></image>
+                  </view>
+                  <view class="tab-desc">
+                    <view class="tab-res">
+                      <text>{{item.name}}</text>
+                      <text>{{item.q1}}</text>
+                    </view>
+                    <view class="tab-bott">
+                      <view class="tab-address">
+                        <i-icon type="coordinates" size="20" color="#888888" />
+                        <text>{{item.city}}</text>
+                      </view>
+                      <view class="tab-phone">
+                        <i-icon type="mobilephone" size="20" color="#888888" />
+                        <text>{{item.phoneNumber}}</text>
+                      </view>
+                    </view>
+                  </view>
+                
+                </view>
+                <!--收藏-->
+                <view class="tab-right">
+                  <view class='wish_list_box_collection' wx:if="{{item.status==0}}">
+                    <!-- 未收藏 -->
+                    <image catchtap='onCollectionTap' src="https://evathumber.vinistyle.cn/upload/201911/20191105135345726.png" data-index='{{index}}' data-openid="{{item.openid}}"></image>
+                  </view>
+                  <view class='wish_list_box_collection' wx:else>
+                    <!-- 收藏过 -->
+                    <image catchtap='onCollectionTap' src='https://evathumber.vinistyle.cn/upload/201911/20191105135345924.png' data-index='{{index}}' data-openid="{{item.openid}}"></image>
+                  </view>
+                </view>
+              </view> 
+            </scroll-view>
+          </swiper-item>
+          <!-- 一般关注 -->
+          <swiper-item catchtouchmove='catchTouchMove'>
+            
+              <view class="tab-conn" wx:for="{{items}}" wx:key>
+                <view class="tab-left">
+                  <view class="tab-tx">
+                    <image src="{{item.avatarUrl}}"></image>
+                  </view>
+                  <view class="tab-desc">
+                    <view class="tab-res">
+                      <text>{{item.name}}</text>
+                      <text>{{item.q1}}</text>
+                    </view>
+                    <view class="tab-bott">
+                      <view class="tab-address">
+                        <i-icon type="coordinates" size="20" color="#888888" />
+                        <text>{{item.city}}</text>
+                      </view>
+                      <view class="tab-phone">
+                        <i-icon type="mobilephone" size="20" color="#888888" />
+                        <text>{{item.phoneNumber}}</text>
+                      </view>
+                    </view>
+                  </view>
+                </view>
+                <!--收藏-->
+                <view class="tab-right">
+                  <view class='wish_list_box_collection' wx:if="{{item.status==0}}">
+                    <!-- 未收藏 -->
+                    <image catchtap='onCollectionTap' src="https://evathumber.vinistyle.cn/upload/201911/20191105135345726.png" data-index='{{index}}' data-openid="{{item.openid}}"></image>
+                  </view>
+                  <view class='wish_list_box_collection' wx:else>
+                    <!-- 收藏过 -->
+                    <image catchtap='onCollectionTap' src='https://evathumber.vinistyle.cn/upload/201911/20191105135345924.png' data-index='{{index}}' data-openid="{{item.openid}}"></image>
+                  </view>
+                </view>
+              </view>
+            
+          </swiper-item>
+          <!-- 我的收藏 -->
+          <swiper-item catchtouchmove='catchTouchMove'>
+            
+              <view class="tab-conn" wx:for="{{items}}" wx:key wx:if="{{item.status==1}}">
+                <view class="tab-left">
+                  <view class="tab-tx">
+                    <image src="{{item.avatarUrl}}"></image>
+                  </view>
+                  <view class="tab-desc">
+                    <view class="tab-res">
+                      <text>{{item.name}}</text>
+                      <text>{{item.q1}}</text>
+                    </view>
+                    <view class="tab-bott">
+                      <view class="tab-address">
+                        <i-icon type="coordinates" size="20" color="#888888" />
+                        <text>{{item.city}}</text>
+                      </view>
+                      <view class="tab-phone">
+                        <i-icon type="mobilephone" size="20" color="#888888" />
+                        <text>{{item.phoneNumber}}</text>
+                      </view>
+                    </view>
+                  </view>
+                
+                </view>
+                <!--收藏-->
+                <view class="tab-right">
+                  <view class='wish_list_box_collection' wx:if="{{item.status==0}}">
+                    <!-- 未收藏 -->
+                    <image catchtap='onCollectionTap' src="https://evathumber.vinistyle.cn/upload/201911/20191105135345726.png" data-index='{{index}}' data-openid="{{item.openid}}"></image>
+                  </view>
+                  <view class='wish_list_box_collection' wx:else>
+                    <!-- 收藏过 -->
+                    <image catchtap='onCollectionTap' src='https://evathumber.vinistyle.cn/upload/201911/20191105135345924.png' data-index='{{index}}' data-openid="{{item.openid}}"></image>
+                  </view>
+                </view>
+              </view>
+            
+          </swiper-item>
+      </swiper>
+    </view>
+  </view>
+</view>

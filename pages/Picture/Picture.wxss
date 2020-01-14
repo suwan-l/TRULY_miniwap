@@ -1,0 +1,91 @@
+/* pages/Picture/Picture.wxss */
+.picture{
+  width:750rpx;
+  height:100vh;
+  overflow: hidden;
+}
+.pic-bg{
+  width:100%;
+  height:100%;
+  background: url('https://evathumber.vinistyle.cn/upload/201910/20191030134620192.jpg');
+  background-size: cover;
+}
+.pic-bg image{
+  width:750rpx;
+  height:907rpx;
+  display: block;
+  position:relative;
+}
+.pic-tips{
+  width:61%;
+  text-align:center;
+  font-size:24rpx;
+  color:#888888;
+  position: absolute;
+  top:760rpx;
+  left:0;
+  right:0;
+  margin:auto;
+  line-height:40rpx;
+}
+.btn{
+  width:690rpx;
+  height:98rpx;
+  background:#51c4c4;
+  color:#fff;
+  /* margin-bottom:100rpx; */
+  font-size:36rpx;
+  border-style: none;
+  border-radius:15rpx; 
+}
+.imgDisposeBlock{
+  position:relative;
+}
+.weTips{
+  width:500rpx;
+  position:absolute;
+  top:155rpx;
+  left:0;
+  right:0;
+  z-index:22;
+  text-align:center;
+  color:#fff;
+  margin:auto;
+  line-height: 50rpx;
+}
+.editPerfectBtn{
+  width:300rpx;
+  height:80rpx;
+  background:#51c4c4;
+  color:#fff;
+  text-align:center;
+  line-height:80rpx;
+  font-size:36rpx;
+  border-style: none;
+  border-radius:15rpx; 
+  margin:23rpx auto 0rpx;
+  z-index:99;
+  position:relative;
+}
+
+.container{
+  padding-top:250rpx;
+}
+.pic{
+  width:220rpx;
+  height:220rpx;
+  border-radius:100%;
+  margin:auto;
+}
+.progress{
+  width:340rpx;
+  height:14rpx;
+  margin:55rpx auto;
+  display:block;
+}
+.progress-title{
+  width:100%;
+  font-size:26rpx;
+  color:#b2b2b2;
+  text-align:center;
+}

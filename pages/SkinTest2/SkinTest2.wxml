@@ -1,0 +1,126 @@
+<!--pages/SkinTest2/SkinTest2.wxml-->
+<view class="container">
+  <view class="bg"></view>
+  <view class="conn">
+    <view class="step">
+      <text class="txt1">Step2</text>――敏感性皮肤（Sensitive－S）VS.耐受性皮肤(Resistant－R) 通过回答这部分的问题，可以准确分析出您皮肤趋向于发生各种敏感肌肤症状的程度，所有的面疱（痤疮/痘痘）、红肿、潮红、发痒都属于皮肤的敏感症状。
+    </view>
+    <!--第一题  S-->
+    <view class="answer">
+      <view class="answer-num">
+        <image src="https://evathumber.vinistyle.cn/upload/201910/20191028105123208.png"></image>
+        <text>01</text>
+      </view>
+      <view class="question">
+        <text class="ques-title">脸上会出现红色的脓包、痘痘：</text>
+        <view class="ques-desc">
+          <text class="{{answer1=='2'?'active':''}}"  bindtap="ans_btn1" data-idx1="2">A. 从不</text>
+          <text class="{{answer1=='4'?'active':''}}" bindtap="ans_btn1" data-idx1="4">B. 很少</text>
+          <text class="{{answer1=='6'?'active':''}}" bindtap="ans_btn1" data-idx1="6">C. 至少一个月出现一次</text>
+          <text class="{{answer1=='8'?'active':''}}" bindtap="ans_btn1" data-idx1="8">D. 至少每周出现一次</text>
+        </view>
+      </view>
+      <text class="answer-idx">1/6</text>
+    </view>
+    <!--第一题  E-->
+
+    <!--第二题  S-->
+    <view class="answer">
+      <view class="answer-num">
+        <image src="https://evathumber.vinistyle.cn/upload/201910/20191028105123208.png"></image>
+        <text>02</text>
+      </view>
+      <view class="question">
+        <text class="ques-title">使用护肤产品（包括洁面、化妆水、乳液、面膜等）的时候会引发潮红、痒或是刺痛吗：</text>
+        <view class="ques-desc">
+          <text class="{{answer2=='2'?'active':''}}"  bindtap="ans_btn2" data-idx2="2">A. 从不 </text>
+          <text class="{{answer2=='4'?'active':''}}"  bindtap="ans_btn2" data-idx2="4">B. 很少 </text>
+          <text class="{{answer2=='6'?'active':''}}"  bindtap="ans_btn2" data-idx2="6">C. 经常 </text>
+          <text class="{{answer2=='8'?'active':''}}"  bindtap="ans_btn2" data-idx2="8">D. 总是如此</text>
+        </view>
+      </view>
+      <text class="answer-idx">2/6</text>
+    </view>
+    <!--第二题  E-->
+
+    <!--第三题  S-->
+    <view class="answer">
+      <view class="answer-num">
+        <image src="https://evathumber.vinistyle.cn/upload/201910/20191028105123208.png"></image>
+        <text>03</text>
+      </view>
+      <view class="question">
+        <text class="ques-title">平时皮肤有没有经常出现发红的情况，程度如何？</text>
+        <view class="ques-desc">
+          <text class="{{answer3=='2'?'active':''}}"  bindtap="ans_btn3" data-idx3="2">A. 没有出现红过皮肤发红</text>
+          <text class="{{answer3=='4'?'active':''}}"  bindtap="ans_btn3" data-idx3="4">B. 皮肤偶尔会发红，但没注意过是什么原因</text>
+          <text class="{{answer3=='6'?'active':''}}"  bindtap="ans_btn3" data-idx3="6">C. 皮肤比较容易发红，遇冷遇热，吃辛辣后</text>
+          <text class="{{answer3=='8'?'active':''}}"  bindtap="ans_btn3" data-idx3="8">D. 皮肤特别容易发红，比如敷面膜后，化妆品后，洗完脸，包括忽冷忽热</text>
+        </view>
+      </view>
+      <text class="answer-idx">3/6</text>
+    </view>
+    <!--第三题  E-->
+
+    <!--第四题  S-->
+    <view class="answer">
+      <view class="answer-num">
+        <image src="https://evathumber.vinistyle.cn/upload/201910/20191028105123208.png"></image>
+        <text>04</text>
+      </view>
+      <view class="question">
+        <text class="ques-title">在换季或温差较大环境切换时，您的肌肤是否会感觉不适？：</text>
+        <view class="ques-desc">
+          <text class="{{answer4=='2'?'active':''}}"  bindtap="ans_btn4" data-idx4="2">A. 从不 </text>
+          <text class="{{answer4=='4'?'active':''}}"  bindtap="ans_btn4" data-idx4="4">B. 有时 </text>
+          <text class="{{answer4=='6'?'active':''}}"  bindtap="ans_btn4" data-idx4="6">C. 经常 </text>
+          <text class="{{answer4=='8'?'active':''}}"  bindtap="ans_btn4" data-idx4="8">D. 总是这样，每次换季时肌肤都会出现不适感</text>
+        </view>
+      </view>
+      <text class="answer-idx">4/6</text>
+    </view>
+    <!--第四题  E-->
+
+    <!--第五题  S-->
+    <view class="answer">
+      <view class="answer-num">
+        <image src="https://evathumber.vinistyle.cn/upload/201910/20191028105123208.png"></image>
+        <text>05</text>
+      </view>
+      <view class="question">
+        <text class="ques-title">在经历了适度的运动后，或在压力下，或受到强烈的情感刺激，比如生气的情况下，您的脸部或颈部会经常变红？</text>
+        <view class="ques-desc">
+          <text class="{{answer5=='2'?'active':''}}"  bindtap="ans_btn5" data-idx5="2">A．从来没有</text>
+          <text class="{{answer5=='4'?'active':''}}"  bindtap="ans_btn5" data-idx5="4">B．有时会</text>
+          <text class="{{answer5=='6'?'active':''}}"  bindtap="ans_btn5" data-idx5="6">C．很频繁</text>
+          <text class="{{answer5=='8'?'active':''}}"  bindtap="ans_btn5" data-idx5="8">D. 总会有</text>
+        </view>
+      </view>
+      <text class="answer-idx">5/6</text>
+    </view>
+    <!--第五题  E-->
+
+    <!--第六题  S-->
+    <view class="answer">
+      <view class="answer-num">
+        <image src="https://evathumber.vinistyle.cn/upload/201910/20191028105123208.png"></image>
+        <text>06</text>
+      </view>
+      <view class="question">
+        <text class="ques-title">您曾经被诊断过有湿疹或者接触性皮炎吗（指皮肤接触了外界物质而引起瘙痒、肿胀等情况）？</text>
+        <view class="ques-desc">
+          <text class="{{answer6=='2'?'active':''}}"  bindtap="ans_btn6" data-idx6="2">A．从来没有</text>
+          <text class="{{answer6=='4'?'active':''}}"  bindtap="ans_btn6" data-idx6="4">B．好像有，我不太确定</text>
+          <text class="{{answer6=='6'?'active':''}}"  bindtap="ans_btn6" data-idx6="6">C．是的</text>
+          <text class="{{answer6=='8'?'active':''}}"  bindtap="ans_btn6" data-idx6="8">D．是的，并且是严重病例</text>
+        </view>
+      </view>
+      <text class="answer-idx">6/6</text>
+    </view>
+    <!--第六题  E-->
+  </view>
+  <view class="button">
+    <button bindtap="prve">上一页</button>
+    <button bindtap="next">下一页</button>
+  </view>
+</view>

@@ -1,0 +1,88 @@
+<!--pages/SkinTest2/SkinTest2.wxml-->
+<view class="container">
+  <view class="bg"></view>
+  <view class="conn">
+    <view class="step">
+      <text class="txt1">Step3</text>――色素沉着性皮肤（Pigmented－P）VS.非色素沉着性皮肤(Non-pigmented－N) 通过回答这部分的问题，测试您的皮肤是否有形成黑色素的倾向。黑色素会使你受到日晒后的皮肤出现黑斑、雀斑以及一些深色区域。反过来说，黑色素的生成也是皮肤自我保护的反应，它会通过使肤色变深来保护你不被晒伤。
+    </view>
+    <!--第一题  S-->
+    <view class="answer">
+      <view class="answer-num">
+        <image src="https://evathumber.vinistyle.cn/upload/201910/20191028105123208.png"></image>
+        <text>01</text>
+      </view>
+      <view class="question">
+        <text class="ques-title">长过痘痘的部位会留下深棕色/黑色的印记：</text>
+        <view class="ques-desc">
+          <text class="{{answer1=='2'?'active':''}}"  bindtap="ans_btn1" data-idx1="2">A. 从不 </text>
+          <text class="{{answer1=='4'?'active':''}}" bindtap="ans_btn1" data-idx1="4">B. 有时会 </text>
+          <text class="{{answer1=='6'?'active':''}}" bindtap="ans_btn1" data-idx1="6">C. 经常会 </text>
+          <text class="{{answer1=='8'?'active':''}}" bindtap="ans_btn1" data-idx1="8">D. 总是这样 </text>
+        </view>
+      </view>
+      <text class="answer-idx">1/4</text>
+    </view>
+    <!--第一题  E-->
+
+    <!--第二题  S-->
+    <view class="answer">
+      <view class="answer-num">
+        <image src="https://evathumber.vinistyle.cn/upload/201910/20191028105123208.png"></image>
+        <text>02</text>
+      </view>
+      <view class="question">
+        <text class="ques-title">日晒之后斑点会加深吗？</text>
+        <view class="ques-desc">
+          <text class="{{answer2=='2'?'active':''}}"  bindtap="ans_btn2" data-idx2="2">A. 我没有深色斑点 </text>
+          <text class="{{answer2=='4'?'active':''}}"  bindtap="ans_btn2" data-idx2="4">B. 无法确定 </text>
+          <text class="{{answer2=='6'?'active':''}}"  bindtap="ans_btn2" data-idx2="6">C. 色斑会加深 </text>
+          <text class="{{answer2=='8'?'active':''}}"  bindtap="ans_btn2" data-idx2="8">D. 原有色斑会加深，且会出现新的斑点 </text>
+        </view>
+      </view>
+      <text class="answer-idx">2/4</text>
+    </view>
+    <!--第二题  E-->
+
+    <!--第三题  S-->
+    <view class="answer">
+      <view class="answer-num">
+        <image src="https://evathumber.vinistyle.cn/upload/201910/20191028105123208.png"></image>
+        <text>03</text>
+      </view>
+      <view class="question">
+        <text class="ques-title">脸部、前胸、后背或手臂是否有或者曾经有小的棕色斑点（雀斑或黄褐斑）：</text>
+        <view class="ques-desc">
+          <text class="{{answer3=='2'?'active':''}}"  bindtap="ans_btn3" data-idx3="2">A. 没有 </text>
+          <text class="{{answer3=='4'?'active':''}}"  bindtap="ans_btn3" data-idx3="4">B. 有一些（1-5个） </text>
+          <text class="{{answer3=='6'?'active':''}}"  bindtap="ans_btn3" data-idx3="6">C. 有很多（6-15个） </text>
+          <text class="{{answer3=='8'?'active':''}}"  bindtap="ans_btn3" data-idx3="8">D. 非常多（16个以上） </text>
+        </view>
+      </view>
+      <text class="answer-idx">3/4</text>
+    </view>
+    <!--第三题  E-->
+
+    <!--第四题  S-->
+    <view class="answer">
+      <view class="answer-num">
+        <image src="https://evathumber.vinistyle.cn/upload/201910/20191028105123208.png"></image>
+        <text>04</text>
+      </view>
+      <view class="question">
+        <text class="ques-title">几个月没有暴晒当你第一次被暴晒时，皮肤感觉：</text>
+        <view class="ques-desc">
+          <text class="{{answer4=='2'?'active':''}}"  bindtap="ans_btn4" data-idx4="2">A. 有灼热感，但没有晒黑</text>
+          <text class="{{answer4=='4'?'active':''}}"  bindtap="ans_btn4" data-idx4="4">B. 有灼热感，且皮肤变黑了 </text>
+          <text class="{{answer4=='6'?'active':''}}"  bindtap="ans_btn4" data-idx4="6">C. 无灼热感，但是皮肤直接变黑了</text>
+          <text class="{{answer4=='8'?'active':''}}"  bindtap="ans_btn4" data-idx4="8">D .我的肤色已经很深了，我也分不清这样是否会变得更深</text>
+        </view>
+      </view>
+      <text class="answer-idx">4/4</text>
+    </view>
+    <!--第四题  E-->
+  </view>
+  <view class="button">
+    <button bindtap="prve">上一页</button>
+    <button bindtap="next">下一页</button>
+  </view>
+</view>

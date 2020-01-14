@@ -1,0 +1,100 @@
+<!--pages/SkinTest2/SkinTest2.wxml-->
+<view class="container">
+  <view class="bg"></view>
+  <view class="conn">  
+    <!--第一题  敏感问题 S-->
+    <block wx:if='{{total2 >= 19 && total1 < 21}}'>
+      <view class="step">
+        <text class="txt1">Step5</text>亲爱的，从前面的问题测试中我们了解到，您的肌肤有出现敏感问题的倾向，为了更精准的判断您的肌肤状态，给您更科学、全面的呵护，辛苦您再回答一下下面的问题的哦
+      </view>
+      <view class="answer">
+        <view class="answer-num">
+          <image src="https://evathumber.vinistyle.cn/upload/201910/20191028105123208.png"></image>
+          <text>01</text>
+        </view>
+        <view class="question">
+          <text class="ques-title">目前，您的肌肤是否处于敏感爆发阶段？：</text>
+          <view class="ques-desc">
+            <text class="{{answer1=='A'?'active':''}}"  bindtap="ans_btn1" data-idx1="A">A. 没有</text>
+            <text class="{{answer1=='B'?'active':''}}" bindtap="ans_btn1" data-idx1="B">B. 皮肤有瘙痒感且发红</text>
+            <text class="{{answer1=='C'?'active':''}}" bindtap="ans_btn1" data-idx1="C">C.皮肤有瘙痒感、发红且有小红疹</text>
+            <text class="{{answer1=='D'?'active':''}}" bindtap="ans_btn1" data-idx1="D">D.皮肤很痒，且有红疹子或脓包出现</text>
+          </view>
+        </view>
+        <text class="answer-idx">1/1</text>
+      </view> 
+    </block>
+
+    <!--第一题  E-->
+
+    <!--第二题  痘痘问题 S-->
+    <block wx:elif='{{total1 >= 21 && total2 < 19}}'>
+      <view class="step">
+        <text class="txt1">Step5</text>亲爱的，从前面的问题测试中我们了解到，您的肌肤有出现痘痘问题的倾向，为了更精准的判断您的肌肤状态，给您更科学、全面的呵护，辛苦您再回答一下下面的问题的哦
+      </view>
+      <view class="answer">
+        <view class="answer-num">
+          <image src="https://evathumber.vinistyle.cn/upload/201910/20191028105123208.png"></image>
+          <text>01</text>
+        </view>
+        <view class="question">
+          <text class="ques-title">目前，您的肌肤是否处于痘痘问题爆发阶段？：</text>
+          <view class="ques-desc">
+            <text class="{{answer2=='A'?'active':''}}"  bindtap="ans_btn2" data-idx2="A">A. 没有痘痘</text>
+            <text class="{{answer2=='B'?'active':''}}"  bindtap="ans_btn2" data-idx2="B">B. 局部有个别或者少数的闭口粉刺和黑头</text>
+            <text class="{{answer2=='C'?'active':''}}"  bindtap="ans_btn2" data-idx2="C">C.脸上有比较多的闭口粉刺或个别小红疹</text>
+            <text class="{{answer2=='D'?'active':''}}"  bindtap="ans_btn2" data-idx2="D">D.面部有粉刺、小红疹和脓包</text>
+          </view>
+        </view>
+        <text class="answer-idx">1/1</text>
+      </view>
+    </block>
+    <!--第二题  E-->
+
+    <!--敏感和痘痘问题-->
+    <block wx:else>
+      <view class="step">
+        <text class="txt1">Step5</text>亲爱的，从前面的问题测试中我们了解到，您的肌肤有出现痘痘以及敏感问题的倾向，为了更精准的判断您的肌肤状态，给您更科学、全面的呵护，辛苦您再回答一下下面的问题的哦
+      </view>
+      <!--敏感问题-->
+      <view class="answer">
+        <view class="answer-num">
+          <image src="https://evathumber.vinistyle.cn/upload/201910/20191028105123208.png"></image>
+          <text>01</text>
+        </view>
+        <view class="question">
+          <text class="ques-title">目前，您的肌肤是否处于敏感爆发阶段？：</text>
+          <view class="ques-desc">
+            <text class="{{answer1=='A'?'active':''}}"  bindtap="ans_btn1" data-idx1="A">A. 没有</text>
+            <text class="{{answer1=='B'?'active':''}}" bindtap="ans_btn1" data-idx1="B">B. 皮肤有瘙痒感且发红</text>
+            <text class="{{answer1=='C'?'active':''}}" bindtap="ans_btn1" data-idx1="C">C.皮肤有瘙痒感、发红且有小红疹</text>
+            <text class="{{answer1=='D'?'active':''}}" bindtap="ans_btn1" data-idx1="D">D.皮肤很痒，且有红疹子或脓包出现</text>
+          </view>
+        </view>
+        <text class="answer-idx">1/2</text>
+      </view> 
+      <!--敏感痘痘问题-->
+      <view class="answer">
+        <view class="answer-num">
+          <image src="https://evathumber.vinistyle.cn/upload/201910/20191028105123208.png"></image>
+          <text>02</text>
+        </view>
+        <view class="question">
+          <text class="ques-title">目前，您的肌肤是否处于痘痘问题爆发阶段？：</text>
+          <view class="ques-desc">
+            <text class="{{answer2=='A'?'active':''}}"  bindtap="ans_btn2" data-idx2="A">A. 没有痘痘</text>
+            <text class="{{answer2=='B'?'active':''}}"  bindtap="ans_btn2" data-idx2="B">B. 局部有个别或者少数的闭口粉刺和黑头</text>
+            <text class="{{answer2=='C'?'active':''}}"  bindtap="ans_btn2" data-idx2="C">C.脸上有比较多的闭口粉刺或个别小红疹</text>
+            <text class="{{answer2=='D'?'active':''}}"  bindtap="ans_btn2" data-idx2="D">D.面部有粉刺、小红疹和脓包</text>
+          </view>
+        </view>
+        <text class="answer-idx">2/2</text>
+      </view>
+    </block>
+
+  </view>
+  <view class="button">
+    <button bindtap="prve">上一页</button>
+    <button bindtap="next">下一页</button>
+  </view>
+</view>

@@ -1,0 +1,25 @@
+<!--pages/Register/Register.wxml-->
+<view class="container">
+  <image class="register_bg" src="https://evathumber.vinistyle.cn/upload/201911/20191105110539583.png"></image>
+  <view class="conn">
+    
+    <view class="info">
+      <view class="info-left">
+        <text class="info-tips" wx:if="{{!hasUserInfo && canIUse}}">请授权获取头像和昵称</text>
+        <image src="{{avatarUrl}}"></image>
+        <text class="info-name">{{nickName}}</text>
+      </view>
+      <button class="btn" wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo">自动获取</button>
+    </view>
+
+    <view class='changeInfoName'>
+      <input placeholder='请输入手机号' bindinput='getPhoneValue' value='{{phone}}' maxlength='11' /> 
+    </view>
+    <view class='changeInfoName'>
+      <input placeholder='请输验证码' bindinput='getCodeValue' value='{{code}}' maxlength='6' style='width:70%;'/> 
+      <button class='codeBtn' bindtap='getVerificationCode' disabled='{{disabled}}'>{{codename}}</button>
+    </view>
+
+    <button class="register-btn" hover-class="none" bindtap="register">注册</button>
+  </view>
+</view>

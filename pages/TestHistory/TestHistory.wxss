@@ -1,0 +1,99 @@
+page{
+  background:#fafafa;
+}
+.container {
+  width: 690rpx;
+  overflow: hidden;
+  box-sizing: border-box;
+  padding-bottom: 10rpx;
+  margin: auto;
+  padding: 48rpx 0rpx;
+  background:#fafafa;
+}
+
+.touch-item {
+  font-size: 14px;
+  display: flex;
+  /* //均匀排布每个元素 */
+  justify-content: space-between;
+  width: 96%;
+  overflow: hidden;
+  height: 90rpx;
+  position: relative;
+  z-index:100;
+  background-color: white;
+  align-items: center;
+  box-shadow: 0 0 20rpx #ebebeb;
+  margin: 28rpx auto;
+  border-radius: 3rpx;
+}
+
+.content {
+  width: 100%;
+  margin-right: 0;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  -webkit-transform: translateX(90px);
+  transform: translateX(90px);
+}
+
+.left {
+  position: absolute;
+  left: -145rpx;
+  top: -17rpx;
+}
+
+.right {
+  position: absolute;
+  right: 215rpx;
+  top: -17rpx;
+  color: #51c4c4;
+  font-size: 30rpx;
+}
+
+.data {
+  font-size: 26rpx;
+  color: #000;
+  display: inline-block;
+  margin: 0rpx 30rpx;
+}
+
+.time {
+  font-size: 26rpx;
+  color: #808080;
+  display: inline-block;
+  margin-right: 5rpx;
+}
+
+.type {
+  font-size: 30rpx;
+  color: #51c4c4;
+  margin-right: 30rpx;
+}
+
+.del {
+  flex-direction: column;
+  -webkit-transform: translateX(90px);
+  transform: translateX(90px);
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  position: absolute;
+  top: 0rpx;
+  background-color: #e64340;
+  width: 150rpx;
+  text-align: center;
+  z-index: 1;
+  right: 0;
+  color: #fff;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top-right-radius: 5rpx;
+  border-bottom-right-radius: 5rpx;
+}
+
+.touch-move-active .content, .touch-move-active .del {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}

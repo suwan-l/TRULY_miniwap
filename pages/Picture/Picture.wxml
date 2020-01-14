@@ -1,0 +1,27 @@
+<import src="../we-cropper/we-cropper.wxml" />
+<view class="picture" wx:if="{{isShow}}">
+  <view class="pic-bg">
+    <image src="https://evathumber.vinistyle.cn/upload/201911/20191111170501561.png"></image>
+    <text class="pic-tips">请拍摄正面、清晰、无遮挡的面部大头照，只需要脸部画面即可。</text>
+    <button class="btn" bindtap="uploadTap">开始拍照</button>
+  </view>
+</view>
+
+
+<view class="imgDisposeBlock" wx:if="{{picShow}}">
+  <text class="weTips">如果不是脸部大头照，请手动裁剪哦~~</text>
+  <view class='imgDisposeArea'>
+    <template is="we-cropper" data="{{...cropperOpt}}" />
+  </view>
+  <view class='imgDisposeControlLine'>
+    <!-- <view class='editBtn reelectBtn' bindtap="uploadTap">选择图片</view> -->
+    <view class='editPerfectBtn' bindtap="getCropperImage">上传</view>
+  </view>
+</view>
+
+<view class="container" wx:if="{{prossShow}}">
+  <image class="pic" src="{{photo_name}}"></image>
+  <progress class="progress"  percent="100" active='true' stroke-width="14" backgroundColor="#e0f1f0" activeColor="#51c4c4" style="border-radius:100rpx;overflow:hidden"/>
+  <view class='progress-title'>肤质分析中...</view>
+</view>
+

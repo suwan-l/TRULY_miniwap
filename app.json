@@ -1,0 +1,28 @@
+{
+  "pages": [
+    "pages/BasicInfor/BasicInfor",   
+    "pages/SkinTest1/SkinTest1",
+    "pages/SkinTest2/SkinTest2",
+    "pages/SkinTest3/SkinTest3",
+    "pages/SkinTest4/SkinTest4",
+    "pages/SkinTest5/SkinTest5",
+    "pages/Picture/Picture",
+    "pages/Register/Register",
+    "pages/SkinReport/SkinReport",
+    "pages/TestHistory/TestHistory",
+    "pages/AgentHome/AgentHome"
+  ],
+  "navigateToMiniProgramAppIdList": [
+    "wx164af89403c08804"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "usingComponents": {
+    "i-icon": "../dist/icon/index"
+  },
+  "sitemapLocation": "sitemap.json"
+}

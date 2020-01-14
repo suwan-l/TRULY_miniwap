@@ -1,0 +1,79 @@
+<!--pages/BasicInfor/BasicInfor.wxml-->
+<view class="container" wx:if="{{isShow1}}">
+  <view class="top">
+    <image class="top-bg" src="https://evathumber.vinistyle.cn/upload/201911/20191113174040157.png"></image>
+    <image class="logo" src="https://evathumber.vinistyle.cn/upload/201910/20191028130626337.png"></image>
+    <text>发掘肌肤护理真相</text>
+  </view>
+
+  <view class="conn">
+    <form bindsubmit="formSubmit">
+      <view class="info">
+        <view class="txt1">性别</view>
+        <picker class="txt2" bindchange="bindPickerChange" value="{{index}}" range="{{array}}" name="sex">
+          <view wx:if='{{index==null}}'>请输入性别</view>
+          <view class="picker">
+            {{array[index]}}
+          </view>
+        </picker>
+        <block wx:if='{{index==null}}'>
+          <i-icon class="icon"  type="enter" size="25" color="#ccc" />
+        </block>
+        <block wx:else>
+          <i-icon class="icon" type="enter" size="25" color="#51c4c4" />
+        </block> 
+        
+      </view>
+
+      <view class="info">
+        <view class="txt1">出生日期</view>
+        <picker class="txt2" mode="date" value="{{date}}" bindchange="bindDateChange" name="date">
+          <view wx:if='{{date==null}}'>请选择出生日期</view>
+          <view class="picker">
+            {{date}}
+          </view>
+        </picker>
+        <block wx:if='{{date==null}}'>
+          <i-icon class="icon"  type="enter" size="25" color="#ccc" />
+        </block>
+        <block wx:else>
+          <i-icon class="icon" type="enter" size="25" color="#51c4c4" />
+        </block> 
+      </view>
+
+      <view class="info">
+        <view class="txt1">城市</view>
+        <picker class="txt2 " mode="region" bindchange="bindRegionChange" value="{{area}}" name="area">    
+          <view wx:if="{{!isChecked}}">请选择省市</view>
+          <view class="picker {{isChecked?'is_checked':'normal'}}" wx:else>
+            {{area[0]}}{{area[1]}}<view style="display:none">{{area[2]}}</view>
+          </view>
+        </picker>
+        <block wx:if="{{!isChecked}}">
+          <i-icon class="icon"  type="enter" size="25" color="#ccc" />
+        </block>
+        <block wx:else>
+          <i-icon class="icon" type="enter" size="25" color="#51c4c4" />
+        </block> 
+      </view>
+ 
+      <view style="clear:both"></view>
+      <button class="btn" form-type="submit" hover-class="none">完成</button>
+    </form>
+  
+  </view>
+</view>
+
+<!--pages/SkinTest/SkinTest.wxml-->
+<view class="SkinTest_container" wx:if="{{isShow2}}">
+  <view class="SkinTest_bg">
+    <image src="https://evathumber.vinistyle.cn/upload/201910/20191028104609891.jpg"></image>
+  </view>
+  <view class="SkinTest_top">
+    <image src="https://evathumber.vinistyle.cn/upload/201910/20191028104633217.png"></image>
+  </view>
+
+  <text class="SkinTest_title">初灵专业肌肤测试</text>
+  <view class="SkinTest_desc">合理的肌肤分类是科学护肤的基础，根据人类皮肤生理学的特点，运用肌肤常见问题四维诊断法，并结合初灵海量大数据实际皮肤问题的案例分析，最终优化完善了初灵T01-T18，18种肌肤类型分肌护理法，相信这会让你在当下布满营销陷阱的路上，<text>更加科学正确的选择适合自己的产品，而不只是跟风似的“买买买”！</text></view>
+  <button class="SkinTest_btn" hover-class="none" bindtap="test_btn">开始测试</button>
+</view>

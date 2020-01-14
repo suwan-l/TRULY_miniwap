@@ -1,0 +1,88 @@
+<!--pages/SkinTest2/SkinTest2.wxml-->
+<view class="container">
+  <view class="bg"></view>
+  <view class="conn">
+    <view class="step">
+      <text class="txt1">Step1</text>――干性皮肤（Dry - D）VS. 油性皮肤(Oil - O)通过回答这部分的问题，可以准确分析出您皮肤的含水状况和出油程度。研究表明，虽然许多人对于自己属于油性或干性皮肤显得很确定，但其实这些预见往往并不准确。别让自己的那些成见或主观臆断影响你的回答，<text class="txt2">只要根据实际情况来选择就对了。
+      </text>
+    </view>
+    <!--第一题  S-->
+    <view class="answer">
+      <view class="answer-num">
+        <image src="https://evathumber.vinistyle.cn/upload/201910/20191028105123208.png"></image>
+        <text>01</text>
+      </view>
+      <view class="question">
+        <text class="ques-title">一般情况下，你的肌肤到了中午2、3点左右，会出现下面哪种情况？（如果化妆了，则指在不补妆的情况下）：</text>
+        <view class="ques-desc">
+          <text class="{{answer1=='2'?'active':''}}"  bindtap="ans_btn1" data-idx1="2">A. 干燥起皮屑有种紧绷感，不舒服</text>
+          <text class="{{answer1=='4'?'active':''}}" bindtap="ans_btn1" data-idx1="4">B. 看起来还好，和早上起来变化不是太大</text>
+          <text class="{{answer1=='6'?'active':''}}" bindtap="ans_btn1" data-idx1="6">C. T区（前额和鼻子区域）比较油，其他地方还好</text>
+          <text class="{{answer1=='8'?'active':''}}" bindtap="ans_btn1" data-idx1="8">D. 不仅仅是T区（前额和鼻子区域）比较油，其他地方看起来也亮亮的，整个面部显得比较油腻、暗沉</text>
+        </view>
+      </view>
+      <text class="answer-idx">1/4</text>
+    </view>
+    <!--第一题  E-->
+
+    <!--第二题  S-->
+    <view class="answer">
+      <view class="answer-num">
+        <image src="https://evathumber.vinistyle.cn/upload/201910/20191028105123208.png"></image>
+        <text>02</text>
+      </view>
+      <view class="question">
+        <text class="ques-title">洗完脸后不涂抹乳液或面霜，皮肤多久会觉得干燥紧绷？</text>
+        <view class="ques-desc">
+          <text class="{{answer2=='2'?'active':''}}"  bindtap="ans_btn2" data-idx2="2">A. 皮肤擦干后迅速会觉得干燥紧绷</text>
+          <text class="{{answer2=='4'?'active':''}}"  bindtap="ans_btn2" data-idx2="4">B. 约半个小时后皮肤才会觉得干燥</text>
+          <text class="{{answer2=='6'?'active':''}}"  bindtap="ans_btn2" data-idx2="6">C. 皮肤不会觉得干燥</text>
+          <text class="{{answer2=='8'?'active':''}}"  bindtap="ans_btn2" data-idx2="8">D. 皮肤不觉得干燥，且还会发现有明显的出油情况 </text>
+        </view>
+      </view>
+      <text class="answer-idx">2/4</text>
+    </view>
+    <!--第二题  E-->
+
+    <!--第三题  S-->
+    <view class="answer">
+      <view class="answer-num">
+        <image src="https://evathumber.vinistyle.cn/upload/201910/20191028105123208.png"></image>
+        <text>03</text>
+      </view>
+      <view class="question">
+        <text class="ques-title">你脸上有阻塞的毛孔吗（包括“黑头”和“白头”）：</text>
+        <view class="ques-desc">
+          <text class="{{answer3=='2'?'active':''}}"  bindtap="ans_btn3" data-idx3="2">A. 从来没有</text>
+          <text class="{{answer3=='4'?'active':''}}"  bindtap="ans_btn3" data-idx3="4">B. 很少有 </text>
+          <text class="{{answer3=='6'?'active':''}}"  bindtap="ans_btn3" data-idx3="6">C. 有时有 </text>
+          <text class="{{answer3=='8'?'active':''}}"  bindtap="ans_btn3" data-idx3="8">D. 总是出现 </text>
+        </view>
+      </view>
+      <text class="answer-idx">3/4</text>
+    </view>
+    <!--第三题  E-->
+
+    <!--第四题  S-->
+    <view class="answer">
+      <view class="answer-num">
+        <image src="https://evathumber.vinistyle.cn/upload/201910/20191028105123208.png"></image>
+        <text>04</text>
+      </view>
+      <view class="question">
+        <text class="ques-title">T区（前额和鼻子一带）出油吗：</text>
+        <view class="ques-desc">
+          <text class="{{answer4=='2'?'active':''}}"  bindtap="ans_btn4" data-idx4="2">A. 从没有油光 </text>
+          <text class="{{answer4=='4'?'active':''}}"  bindtap="ans_btn4" data-idx4="4">B. 有时会有出油现象 </text>
+          <text class="{{answer4=='6'?'active':''}}"  bindtap="ans_btn4" data-idx4="6">C. 经常有出油现象 </text>
+          <text class="{{answer4=='8'?'active':''}}"  bindtap="ans_btn4" data-idx4="8">D. 总是油油的 </text>
+        </view>
+      </view>
+      <text class="answer-idx">4/4</text>
+    </view>
+    <!--第四题  E-->
+  </view>
+  <view class="button">
+    <button class="btn2" bindtap="next">下一页</button>
+  </view>
+</view>

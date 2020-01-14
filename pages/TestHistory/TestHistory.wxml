@@ -1,0 +1,9 @@
+<view class="container">
+ <view class="touch-item {{item.isTouchMove ? 'touch-move-active' : ''}}"  data-id="{{item.id}}" data-index="{{index}}" bindtouchstart="touchstart" bindtouchmove="touchmove" catchtap="detailList" wx:for="{{items}}" wx:key="">
+  <view class="content">
+    <text class="left">{{item.time}}</text>
+    <text class="right">{{item.q1}}</text>
+  </view>
+  <view class="del" catchtap="del" data-id="{{item.id}}" data-index="{{index}}" type="button">删除</view>
+ </view>
+</view>

@@ -1,0 +1,1249 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"coverView": true,
+		"autoAudits": false,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		}
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.9.0",
+	"appid": "wx0e8731ed17661cc1",
+	"projectname": "%E5%88%9D%E7%81%B5%E8%82%8C%E8%82%A4%E6%B5%8B%E8%AF%95",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"gamePlugin": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": -1,
+					"name": "pages/SkinTest/SkinTest",
+					"pathName": "pages/SkinTest/SkinTest",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/SkinTest1/SkinTest1",
+					"pathName": "pages/SkinTest1/SkinTest1",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/SkinTest2/SkinTest2",
+					"pathName": "pages/SkinTest2/SkinTest2",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 3,
+					"name": "pages/SkinReport/SkinReport",
+					"pathName": "pages/SkinReport/SkinReport",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/SkinTest3/SkinTest3",
+					"pathName": "pages/SkinTest3/SkinTest3",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/SkinTest4/SkinTest4",
+					"pathName": "pages/SkinTest4/SkinTest4",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 6,
+					"name": "pages/BasicInfor/BasicInfor",
+					"pathName": "pages/BasicInfor/BasicInfor",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/SkinReport/SkinReport",
+					"pathName": "pages/SkinReport/SkinReport",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 8,
+					"name": "pages/Register/Register",
+					"pathName": "pages/Register/Register",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/SkinTest/SkinTest",
+					"pathName": "pages/SkinTest/SkinTest",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 10,
+					"name": "pages/BasicInfor/BasicInfor",
+					"pathName": "pages/BasicInfor/BasicInfor",
+					"query": "scene=123321",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/Progress/Progress",
+					"pathName": "pages/Progress/Progress",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/AgentHome/AgentHome",
+					"pathName": "pages/AgentHome/AgentHome",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/BasicInfor/BasicInfor",
+					"pathName": "pages/BasicInfor/BasicInfor",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/SkinTest1/SkinTest1",
+					"pathName": "pages/SkinTest1/SkinTest1",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/SkinTest5/SkinTest5",
+					"pathName": "pages/SkinTest5/SkinTest5",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/SkinTest5/SkinTest5",
+					"pathName": "pages/SkinTest5/SkinTest5",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/SkinTest5/SkinTest5",
+					"pathName": "pages/SkinTest5/SkinTest5",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/SkinTest5/SkinTest5",
+					"pathName": "pages/SkinTest5/SkinTest5",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/SkinTest5/SkinTest5",
+					"pathName": "pages/SkinTest5/SkinTest5",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/SkinTest5/SkinTest5",
+					"pathName": "pages/SkinTest5/SkinTest5",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/SkinTest5/SkinTest5",
+					"pathName": "pages/SkinTest5/SkinTest5",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/SkinTest5/SkinTest5",
+					"pathName": "pages/SkinTest5/SkinTest5",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/SkinTest5/SkinTest5",
+					"pathName": "pages/SkinTest5/SkinTest5",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/SkinTest5/SkinTest5",
+					"pathName": "pages/SkinTest5/SkinTest5",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/SkinTest5/SkinTest5",
+					"pathName": "pages/SkinTest5/SkinTest5",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/SkinTest5/SkinTest5",
+					"pathName": "pages/SkinTest5/SkinTest5",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/SkinTest5/SkinTest5",
+					"pathName": "pages/SkinTest5/SkinTest5",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/SkinTest5/SkinTest5",
+					"pathName": "pages/SkinTest5/SkinTest5",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/SkinTest5/SkinTest5",
+					"pathName": "pages/SkinTest5/SkinTest5",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/SkinTest5/SkinTest5",
+					"pathName": "pages/SkinTest5/SkinTest5",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/SkinTest5/SkinTest5",
+					"pathName": "pages/SkinTest5/SkinTest5",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/ceshi/ceshi",
+					"pathName": "pages/ceshi/ceshi",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 33,
+					"name": "pages/ceshi5/ceshi5",
+					"pathName": "pages/ceshi5/ceshi5",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/BasicInfor/BasicInfor",
+					"pathName": "pages/BasicInfor/BasicInfor",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/Picture/Picture",
+					"pathName": "pages/Picture/Picture",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/SkinTest5/SkinTest5",
+					"pathName": "pages/SkinTest5/SkinTest5",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/Picture/Picture",
+					"pathName": "pages/Picture/Picture",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/Picture/Picture",
+					"pathName": "pages/Picture/Picture",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/BasicInfor/BasicInfor",
+					"pathName": "pages/BasicInfor/BasicInfor",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/Picture/Picture",
+					"pathName": "pages/Picture/Picture",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/Progress/Progress",
+					"pathName": "pages/Progress/Progress",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/Picture/Picture",
+					"pathName": "pages/Picture/Picture",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/Progress/Progress",
+					"pathName": "pages/Progress/Progress",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/ceshi2/ceshi2",
+					"pathName": "pages/ceshi2/ceshi2",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/SkinReport/SkinReport",
+					"pathName": "pages/SkinReport/SkinReport",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/Picture/Picture",
+					"pathName": "pages/Picture/Picture",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/SkinReport/SkinReport",
+					"pathName": "pages/SkinReport/SkinReport",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/SkinReport/SkinReport",
+					"pathName": "pages/SkinReport/SkinReport",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/Picture/Picture",
+					"pathName": "pages/Picture/Picture",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/BasicInfor/BasicInfor",
+					"pathName": "pages/BasicInfor/BasicInfor",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/Picture/Picture",
+					"pathName": "pages/Picture/Picture",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/Picture/Picture",
+					"pathName": "pages/Picture/Picture",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/BasicInfor/BasicInfor",
+					"pathName": "pages/BasicInfor/BasicInfor",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/AgentHome/AgentHome",
+					"pathName": "pages/AgentHome/AgentHome",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/Picture/Picture",
+					"pathName": "pages/Picture/Picture",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/TestHistory/TestHistory",
+					"pathName": "pages/TestHistory/TestHistory",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/TestHistory/TestHistory",
+					"pathName": "pages/TestHistory/TestHistory",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/TestHistory/TestHistory",
+					"pathName": "pages/TestHistory/TestHistory",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/TestHistory/TestHistory",
+					"pathName": "pages/TestHistory/TestHistory",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/TestHistory/TestHistory",
+					"pathName": "pages/TestHistory/TestHistory",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/TestHistory/TestHistory",
+					"pathName": "pages/TestHistory/TestHistory",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/TestHistory/TestHistory",
+					"pathName": "pages/TestHistory/TestHistory",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/ceshi/ceshi",
+					"pathName": "pages/ceshi/ceshi",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/TestHistory/TestHistory",
+					"pathName": "pages/TestHistory/TestHistory",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/ceshi/ceshi",
+					"pathName": "pages/ceshi/ceshi",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/TestHistory/TestHistory",
+					"pathName": "pages/TestHistory/TestHistory",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/TestHistory/TestHistory",
+					"pathName": "pages/TestHistory/TestHistory",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/Picture/Picture",
+					"pathName": "pages/Picture/Picture",
+					"query": "scene=123321",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/Picture/Picture",
+					"pathName": "pages/Picture/Picture",
+					"query": "scene=123321",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/TestHistory/TestHistory",
+					"pathName": "pages/TestHistory/TestHistory",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/TestHistory/TestHistory",
+					"pathName": "pages/TestHistory/TestHistory",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/AgentHome/AgentHome",
+					"pathName": "pages/AgentHome/AgentHome",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/BasicInfor/BasicInfor",
+					"pathName": "pages/BasicInfor/BasicInfor",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/AgentHome/AgentHome",
+					"pathName": "pages/AgentHome/AgentHome",
+					"query": "scene=123321",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/AgentHome/AgentHome",
+					"pathName": "pages/AgentHome/AgentHome",
+					"query": "scene=123321",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/BasicInfor/BasicInfor",
+					"pathName": "pages/BasicInfor/BasicInfor",
+					"query": "scene=123321",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/BasicInfor/BasicInfor",
+					"pathName": "pages/BasicInfor/BasicInfor",
+					"query": "scene=123321",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/AgentHome/AgentHome",
+					"pathName": "pages/AgentHome/AgentHome",
+					"query": "scene=123321",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/AgentHome/AgentHome",
+					"pathName": "pages/AgentHome/AgentHome",
+					"query": "scene=123321",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/Picture/Picture",
+					"pathName": "pages/Picture/Picture",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/AgentHome/AgentHome",
+					"pathName": "pages/AgentHome/AgentHome",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/AgentHome/AgentHome",
+					"pathName": "pages/AgentHome/AgentHome",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/AgentHome/AgentHome",
+					"pathName": "pages/AgentHome/AgentHome",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/AgentHome/AgentHome",
+					"pathName": "pages/AgentHome/AgentHome",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/SkinTest/SkinTest",
+					"pathName": "pages/SkinTest/SkinTest",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/AgentHome/AgentHome",
+					"pathName": "pages/AgentHome/AgentHome",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/SkinReport/SkinReport",
+					"pathName": "pages/SkinReport/SkinReport",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/SkinTest/SkinTest",
+					"pathName": "pages/SkinTest/SkinTest",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/AgentHome/AgentHome",
+					"pathName": "pages/AgentHome/AgentHome",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/AgentHome/AgentHome",
+					"pathName": "pages/AgentHome/AgentHome",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/BasicInfor/BasicInfor",
+					"pathName": "pages/BasicInfor/BasicInfor",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/AgentHome/AgentHome",
+					"pathName": "pages/AgentHome/AgentHome",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/AgentHome/AgentHome",
+					"pathName": "pages/AgentHome/AgentHome",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/AgentHome/AgentHome",
+					"pathName": "pages/AgentHome/AgentHome",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/AgentHome/AgentHome",
+					"pathName": "pages/AgentHome/AgentHome",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/AgentHome/AgentHome",
+					"pathName": "pages/AgentHome/AgentHome",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/AgentHome/AgentHome",
+					"pathName": "pages/AgentHome/AgentHome",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/AgentHome/AgentHome",
+					"pathName": "pages/AgentHome/AgentHome",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/AgentHome/AgentHome",
+					"pathName": "pages/AgentHome/AgentHome",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/AgentHome/AgentHome",
+					"pathName": "pages/AgentHome/AgentHome",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/AgentHome/AgentHome",
+					"pathName": "pages/AgentHome/AgentHome",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/AgentHome/AgentHome",
+					"pathName": "pages/AgentHome/AgentHome",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/BasicInfor/ceshi",
+					"pathName": "pages/BasicInfor/ceshi",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/BasicInfor/BasicInfor",
+					"pathName": "pages/BasicInfor/BasicInfor",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/AgentHome/AgentHome",
+					"pathName": "pages/AgentHome/AgentHome",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/cehsi/cehsi",
+					"pathName": "pages/cehsi/cehsi",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/AgentHome/AgentHome",
+					"pathName": "pages/AgentHome/AgentHome",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/cehsi/cehsi",
+					"pathName": "pages/cehsi/cehsi",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/AgentHome/AgentHome",
+					"pathName": "pages/AgentHome/AgentHome",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/cehsi/cehsi",
+					"pathName": "pages/cehsi/cehsi",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/AgentHome/AgentHome",
+					"pathName": "pages/AgentHome/AgentHome",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/AgentHome/AgentHome",
+					"pathName": "pages/AgentHome/AgentHome",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/Picture/Picture",
+					"pathName": "pages/Picture/Picture",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/ceshi/ceshi",
+					"pathName": "pages/ceshi/ceshi",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/ceshi/ceshi",
+					"pathName": "pages/ceshi/ceshi",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/AgentHome/AgentHome",
+					"pathName": "pages/AgentHome/AgentHome",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/ceshi/ceshi",
+					"pathName": "pages/ceshi/ceshi",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/Picture/Picture",
+					"pathName": "pages/Picture/Picture",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/Picture/Picture",
+					"pathName": "pages/Picture/Picture",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/BasicInfor/BasicInfor",
+					"pathName": "pages/BasicInfor/BasicInfor",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/AgentHome/AgentHome",
+					"pathName": "pages/AgentHome/AgentHome",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/Picture/Picture",
+					"pathName": "pages/Picture/Picture",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/BasicInfor/BasicInfor",
+					"pathName": "pages/BasicInfor/BasicInfor",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/AgentHome/AgentHome",
+					"pathName": "pages/AgentHome/AgentHome",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/SkinTest/SkinTest",
+					"pathName": "pages/SkinTest/SkinTest",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/Picture/Picture",
+					"pathName": "pages/Picture/Picture",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/SkinReport/SkinReport",
+					"pathName": "pages/SkinReport/SkinReport",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/TestHistory/TestHistory",
+					"pathName": "pages/TestHistory/TestHistory",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/BasicInfor/BasicInfor",
+					"pathName": "pages/BasicInfor/BasicInfor",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/BasicInfor/BasicInfor",
+					"pathName": "pages/BasicInfor/BasicInfor",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/TestHistory/TestHistory",
+					"pathName": "pages/TestHistory/TestHistory",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/BasicInfor/BasicInfor",
+					"pathName": "pages/BasicInfor/BasicInfor",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/BasicInfor/BasicInfor",
+					"pathName": "pages/BasicInfor/BasicInfor",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/TestHistory/TestHistory",
+					"pathName": "pages/TestHistory/TestHistory",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/TestHistory/TestHistory",
+					"pathName": "pages/TestHistory/TestHistory",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/AgentHome/AgentHome",
+					"pathName": "pages/AgentHome/AgentHome",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/AgentHome/AgentHome",
+					"pathName": "pages/AgentHome/AgentHome",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/AgentHome/AgentHome",
+					"pathName": "pages/AgentHome/AgentHome",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/TestHistory/TestHistory",
+					"pathName": "pages/TestHistory/TestHistory",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/TestHistory/TestHistory",
+					"pathName": "pages/TestHistory/TestHistory",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/TestHistory/TestHistory",
+					"pathName": "pages/TestHistory/TestHistory",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/AgentHome/AgentHome",
+					"pathName": "pages/AgentHome/AgentHome",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/TestHistory/TestHistory",
+					"pathName": "pages/TestHistory/TestHistory",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/AgentHome/AgentHome",
+					"pathName": "pages/AgentHome/AgentHome",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/TestHistory/TestHistory",
+					"pathName": "pages/TestHistory/TestHistory",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/AgentHome/AgentHome",
+					"pathName": "pages/AgentHome/AgentHome",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/AgentHome/AgentHome",
+					"pathName": "pages/AgentHome/AgentHome",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/BasicInfor/BasicInfor",
+					"pathName": "pages/BasicInfor/BasicInfor",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/BasicInfor/BasicInfor",
+					"pathName": "pages/BasicInfor/BasicInfor",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/TestHistory/TestHistory",
+					"pathName": "pages/TestHistory/TestHistory",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/TestHistory/TestHistory",
+					"pathName": "pages/TestHistory/TestHistory",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/BasicInfor/BasicInfor",
+					"pathName": "pages/BasicInfor/BasicInfor",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/BasicInfor/BasicInfor",
+					"pathName": "pages/BasicInfor/BasicInfor",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/BasicInfor/BasicInfor",
+					"pathName": "pages/BasicInfor/BasicInfor",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/BasicInfor/BasicInfor",
+					"pathName": "pages/BasicInfor/BasicInfor",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/BasicInfor/BasicInfor",
+					"pathName": "pages/BasicInfor/BasicInfor",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/TestHistory/TestHistory",
+					"pathName": "pages/TestHistory/TestHistory",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/SkinReport/SkinReport",
+					"pathName": "pages/SkinReport/SkinReport",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/BasicInfor/BasicInfor",
+					"pathName": "pages/BasicInfor/BasicInfor",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/BasicInfor/BasicInfor",
+					"pathName": "pages/BasicInfor/BasicInfor",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/BasicInfor/BasicInfor",
+					"pathName": "pages/BasicInfor/BasicInfor",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/AgentHome/AgentHome",
+					"pathName": "pages/AgentHome/AgentHome",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/BasicInfor/BasicInfor",
+					"pathName": "pages/BasicInfor/BasicInfor",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/AgentHome/AgentHome",
+					"pathName": "pages/AgentHome/AgentHome",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/Register/Register",
+					"pathName": "pages/Register/Register",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/BasicInfor/BasicInfor",
+					"pathName": "pages/BasicInfor/BasicInfor",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/BasicInfor/BasicInfor",
+					"pathName": "pages/BasicInfor/BasicInfor",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/TestHistory/TestHistory",
+					"pathName": "pages/TestHistory/TestHistory",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/Picture/Picture",
+					"pathName": "pages/Picture/Picture",
+					"scene": null
+				}
+			]
+		}
+	}
+}

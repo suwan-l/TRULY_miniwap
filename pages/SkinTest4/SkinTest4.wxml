@@ -1,0 +1,144 @@
+<!--pages/SkinTest2/SkinTest2.wxml-->
+<view class="container">
+  <view class="bg"></view>
+  <view class="conn">
+    <view class="step">
+      <text class="txt1">Step4</text>――皱纹性皮肤（wrinkled－W）VS.紧致性皮肤Tight－T) 通过回答这部分的问题，可以准确分析出您的皮肤是否属于容易生出皱纹的类型，以及你现在的已经出现的皱纹危机。
+    </view>
+    <!--第一题  S-->
+    <view class="answer">
+      <view class="answer-num">
+        <image src="https://evathumber.vinistyle.cn/upload/201910/20191028105123208.png"></image>
+        <text>01</text>
+      </view>
+      <view class="question">
+        <text class="ques-title">你现在脸上有皱纹吗？</text>
+        <view class="ques-desc">
+          <text class="{{answer1=='2'?'active':''}}"  bindtap="ans_btn1" data-idx1="2">A. 没有，即使是在做微笑、皱眉、抬眉毛这些表情的时候也没有 </text>
+          <text class="{{answer1=='4'?'active':''}}" bindtap="ans_btn1" data-idx1="4">B. 只有当我微笑、皱眉、抬眉时才有</text>
+          <text class="{{answer1=='6'?'active':''}}" bindtap="ans_btn1" data-idx1="6">C. 是的，做表情时有，不运动到的部位也有少量的</text>
+          <text class="{{answer1=='8'?'active':''}}" bindtap="ans_btn1" data-idx1="8">D. 即使面无表情，也有明显的皱纹</text>
+        </view>
+      </view>
+      <text class="answer-idx">1/7</text>
+    </view>
+    <!--第一题  E-->
+
+    <!--第二题  S-->
+    <view class="answer">
+      <view class="answer-num">
+        <image src="https://evathumber.vinistyle.cn/upload/201910/20191028105123208.png"></image>
+        <text>02</text>
+      </view>
+      <view class="question">
+        <text class="ques-title">根据你居住的地区，你所受到的日照属于什么程度呢？</text>
+        <view class="ques-desc">
+          <text class="{{answer2=='2'?'active':''}}"  bindtap="ans_btn2" data-idx2="2">A. 很少量；我住的地区以阴天为主 </text>
+          <text class="{{answer2=='4'?'active':''}}"  bindtap="ans_btn2" data-idx2="4">B. 有一些；我既在鲜有日照的地方生活过，也在日照比较多的地方生活过 </text>
+          <text class="{{answer2=='6'?'active':''}}"  bindtap="ans_btn2" data-idx2="6">C. 中度的；我居住的地方日照程度中等 </text>
+          <text class="{{answer2=='8'?'active':''}}"  bindtap="ans_btn2" data-idx2="8">D. 很多；我住在热带、南方或是日照时间很长的地方 </text>
+        </view>
+      </view>
+      <text class="answer-idx">2/7</text>
+    </view>
+    <!--第二题  E-->
+
+    <!--第三题  S-->
+    <view class="answer">
+      <view class="answer-num">
+        <image src="https://evathumber.vinistyle.cn/upload/201910/20191028105123208.png"></image>
+        <text>03</text>
+      </view>
+      <view class="question">
+        <text class="ques-title">和同龄人相比，你觉得自己符合下面哪种情况？</text>
+        <view class="ques-desc">
+          <text class="{{answer3=='2'?'active':''}}"  bindtap="ans_btn3" data-idx3="2">A. 比同龄人年轻1-5岁 </text>
+          <text class="{{answer3=='4'?'active':''}}"  bindtap="ans_btn3" data-idx3="4">B. 和大部分同龄人一样 </text>
+          <text class="{{answer3=='6'?'active':''}}"  bindtap="ans_btn3" data-idx3="6">C. 比同龄人老1-5岁 </text>
+          <text class="{{answer3=='8'?'active':''}}"  bindtap="ans_btn3" data-idx3="8">D. 老5岁以上 </text>
+        </view>
+      </view>
+      <text class="answer-idx">3/7</text>
+    </view>
+    <!--第三题  E-->
+
+    <!--第四题  S-->
+    <view class="answer">
+      <view class="answer-num">
+        <image src="https://evathumber.vinistyle.cn/upload/201910/20191028105123208.png"></image>
+        <text>04</text>
+      </view>
+      <view class="question">
+        <text class="ques-title">你是一个注重防晒的人吗？</text>
+        <view class="ques-desc">
+          <text class="{{answer4=='2'?'active':''}}"  bindtap="ans_btn4" data-idx4="2">A.很注重防晒，每天都用防晒霜，出门时还经常使用防晒衣和防晒伞等防晒设备</text>
+          <text class="{{answer4=='4'?'active':''}}"  bindtap="ans_btn4" data-idx4="4">B.较为注重防晒，防晒霜或者防晒伞只用一种</text>
+          <text class="{{answer4=='6'?'active':''}}"  bindtap="ans_btn4" data-idx4="6">C.不太注重防晒，想起来就用，想不起来就不用了</text>
+          <text class="{{answer4=='8'?'active':''}}"  bindtap="ans_btn4" data-idx4="8">D. 从来不用防晒霜和防晒设备 </text>
+        </view>
+      </view>
+      <text class="answer-idx">4/7</text>
+    </view>
+    <!--第四题  E-->
+
+    <!--第五题  S-->
+    <view class="answer">
+      <view class="answer-num">
+        <image src="https://evathumber.vinistyle.cn/upload/201910/20191028105123208.png"></image>
+        <text>05</text>
+      </view>
+      <view class="question">
+        <text class="ques-title">在您的生活中，您共抽过多少烟？（或者您曾经接触过吸烟者）</text>
+        <view class="ques-desc">
+          <text class="{{answer5=='2'?'active':''}}"  bindtap="ans_btn5" data-idx5="2">A．没有</text>
+          <text class="{{answer5=='4'?'active':''}}"  bindtap="ans_btn5" data-idx5="4">B．几包</text>
+          <text class="{{answer5=='6'?'active':''}}"  bindtap="ans_btn5" data-idx5="6">C．我不吸烟，但我生活和工作的周围有经常吸烟的人</text>
+          <text class="{{answer5=='8'?'active':''}}"  bindtap="ans_btn5" data-idx5="8">D．我每天都吸烟</text>
+        </view>
+      </view>
+      <text class="answer-idx">5/7</text>
+    </view>
+    <!--第五题  E-->
+
+    <!--第六题  S-->
+    <view class="answer">
+      <view class="answer-num">
+        <image src="https://evathumber.vinistyle.cn/upload/201910/20191028105123208.png"></image>
+        <text>06</text>
+      </view>
+      <view class="question">
+        <text class="ques-title">您在饮食中常常吃水果蔬菜吗？</text>
+        <view class="ques-desc">
+          <text class="{{answer6=='2'?'active':''}}"  bindtap="ans_btn6" data-idx6="2">A．每顿都吃</text>
+          <text class="{{answer6=='4'?'active':''}}"  bindtap="ans_btn6" data-idx6="4">B．一天一顿</text>
+          <text class="{{answer6=='6'?'active':''}}"  bindtap="ans_btn6" data-idx6="6">C．时常</text>
+          <text class="{{answer6=='8'?'active':''}}"  bindtap="ans_btn6" data-idx6="8">D．从不</text>
+        </view>
+      </view>
+      <text class="answer-idx">6/7</text>
+    </view>
+    <!--第六题  E-->
+
+    <!--第七题  S-->
+    <view class="answer">
+      <view class="answer-num">
+        <image src="https://evathumber.vinistyle.cn/upload/201910/20191028105123208.png"></image>
+        <text>07</text>
+      </view>
+      <view class="question">
+        <text class="ques-title">您目前的年龄属于以下哪个阶段？</text>
+        <view class="ques-desc">
+          <text class="{{answer7=='0'?'active':''}}"  bindtap="ans_btn7" data-idx7="0">A：65岁以下</text>
+          <text class="{{answer7=='5'?'active':''}}"  bindtap="ans_btn7" data-idx7="5">B：65岁以上</text>
+        </view>
+      </view>
+      <text class="answer-idx">7/7</text>
+    </view>
+    <!--第七题  E-->
+
+  </view>
+  <view class="button">
+    <button bindtap="prve">上一页</button>
+    <button bindtap="next">下一页</button>
+  </view>
+</view>
